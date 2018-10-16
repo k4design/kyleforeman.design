@@ -8,6 +8,11 @@ html,
 body {
   width: 100%;
   height: 100%;
+  background-image: url("../img/kylecutoutbw2.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+
 }
 
 body {
@@ -21,7 +26,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #44FD86;
+  color: #1EE083;
   text-decoration: none;
 }
 
@@ -42,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: 'teko', 'Helvetica', 'Arial', 'sans-serif';
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -60,14 +65,18 @@ section {
 section h2 {
   font-size: 50px;
 }
-
+.header-content h1{
+  font-weight: 700;
+  line-height: 36px;
+  font-size: 36px;
+}
 .email {
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
   text-decoration: none;
-  border-bottom: 5px solid #44FD86;
+  border-bottom: 5px solid #1EE083;
 }
 
 #mainNav {
@@ -88,7 +97,7 @@ section h2 {
 }
 
 #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus {
-  color: #44fd86;
+  color: #1EE083;
 }
 
 #mainNav .navbar-toggler {
@@ -140,7 +149,7 @@ section h2 {
   }
   #mainNav .navbar-nav > li > a:hover,
   #mainNav .navbar-nav > li > a:focus:hover {
-    color: #44fd86;
+    color: #1EE083;
   }
   #mainNav.navbar-shrink {
     border-color: rgba(34, 34, 34, 0.1);
@@ -150,7 +159,7 @@ section h2 {
     color: #222222;
   }
   #mainNav.navbar-shrink .navbar-brand:hover, #mainNav.navbar-shrink .navbar-brand:focus {
-    color: #fdcc52;
+    color: #1EE083;
   }
   #mainNav.navbar-shrink .navbar-nav > li > a,
   #mainNav.navbar-shrink .navbar-nav > li > a:focus {
@@ -174,11 +183,10 @@ header.masthead {
 header.masthead .header-content {
   max-width: 500px;
   margin-bottom: 100px;
-  text-align: center;
 }
 
 header.masthead .header-content h1 {
-  font-size: 72px;
+  font-size: ;
 }
 
 header.masthead .device-container {
@@ -214,18 +222,20 @@ header.masthead .device-container .screen img {
 }
 
 section.cases {
-display: block;
+  display: ;
   margin-left: auto;
   margin-right: auto;
   width: 70%;
+  padding-bottom: 50px
 }
+
 section.cases h3{
-font-size: 36px;
+font-size: 24px;
 font-weight:700;
 text-shadow: 2px 2px 4px rgba(0,0,0,.5);
 font-family: ;
 color: white;
-padding:25px 0px 0px 50px ;
+text-align: center;
 }
 section.cases #listedcase {
   background-image: url("../img/listedcase.png"); 
@@ -233,6 +243,7 @@ section.cases #listedcase {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  position: relative;
 }
 section.cases #rpcase {
   background-image: url("../img/rpcase.png");
@@ -240,24 +251,79 @@ section.cases #rpcase {
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  position: relative;
 }
-section.cases #armadacase {
-  background-image: url("../img/armadacase.png"); 
+section.cases #bchcase {
+  background-image: url("../img/bchcase.jpg"); 
   min-height: 400px;
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
+  position: relative;
 }
-
-
+section.cases #bchcase:hover
+{
+    background-image: url(../img/bchcasehover.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+section.cases #listedcase:hover
+{
+    background-image: url(../img/listedcasehover.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+section.cases #rpcase:hover
+{
+    background-image: url(../img/rpcasehover.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    transition: background-image 0.5s ease;
+}
+.link {
+  position:absolute; 
+  width:100%;
+  height:100%;
+  top:0;
+  left: 0;
+  z-index: 1;
+}
 @media (min-width: 992px) {
   section.cases .device-container {
     margin-bottom: 0;
   }
 }
+section.dribbble {
+  text-align: center;
+  
+  padding-top: 25px;
+  padding-bottom: 0px;
+  color: #222;
+}
+section.dribbble h3{
+  padding-bottom:25px; 
+}
+section.dribbble .dribbbleposts{
+  display: flex;
+  justify-content: space-between;
+}
+section.dribbble img{
+  width: 100%;
+}
 
 section.clients{
   background-color:#131314;
+  background-image: url("../img/clientsbg.jpg");
+  background-position: center;
+  background-size: cover;
 }
 section.clients h2{
   font-weight: 100;
@@ -268,22 +334,45 @@ section.clients h2{
   margin-bottom:25px;
   letter-spacing: 3px;
 }
-section.clients .clients-list {
-  width: 60%;
-  display: block;
+
+
+.clients-list {
+  margin-top: 50px;
+  margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
 }
-section.clients .clients-list img{
-  margin:10px 20px;
-
+.clients-list-b{
+  margin-right: auto;
+  margin-left: auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+.clients-list img{
+      padding: 10px 0px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      height: 100px;
+      max-width: 200px;
+}
+.clients-list-b img{
+      padding: 10px 0px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      height: 100px;
+      max-width: 220px;
+    
 }
 section.cta {
-  position: relative;
-  padding: 250px 0;
-  background-image: url("../img/bg-cta.jpg");
-  background-position: center;
-  background-size: cover;
+  padding: 100px 0;
+  background-color: #1EE083;
+  text-align: center;
 }
 
 section.cta .cta-content {
@@ -293,10 +382,9 @@ section.cta .cta-content {
 
 section.cta .cta-content h2 {
   font-size: 50px;
-  max-width: 450px;
   margin-top: 0;
   margin-bottom: 25px;
-  color: white;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -311,11 +399,11 @@ section.cta .overlay {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 section.contact {
   text-align: center;
+  background-color: #1EE083;
 }
 
 section.contact h2 {
@@ -337,7 +425,7 @@ section.contact ul.list-social li a {
   display: block;
   width: 80px;
   height: 80px;
-  color: white;
+  color: black;
   border-radius: 100%;
 }
 
@@ -406,25 +494,111 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 }
 
 .btn-outline {
-  color: white;
-  border: 1px solid;
-  border-color: white;
+  color: black;
+  border: 3px solid;
+  border-color: black;
 }
 
 .btn-outline:hover, .btn-outline:focus, .btn-outline:active, .btn-outline.active {
-  color: white;
-  border-color: #fdcc52;
-  background-color: #fdcc52;
+  color: black;
+  border-color: white;
+}
+section.cta .cta-content .button-outline:hover{
+  border-color: white;
 }
 
 .btn {
   border-radius: 300px;
   font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
   letter-spacing: 2px;
-  text-transform: uppercase;
 }
 
 .btn-xl {
-  font-size: 11px;
+  font-size: 18px;
   padding: 15px 45px;
+  font-weight: 700;
+}
+.social p{
+  margin:25px 0px 10px 0px;
+}
+.social {
+  padding: 25px 0;
+}
+.social a:hover{
+  color: white;
+}
+.social i{
+  margin: 0 50px;
+  width: 25px;
+}
+@media only screen and (max-width: 735px) {
+    header.masthead{
+      padding-top: 100px;
+      padding-bottom: 50px;
+    }
+    .header-content p {
+      font-size: 14px;
+      width: 200px;
+    }
+    .header-content h1{
+      width: 50%;
+      font-size: 48px;
+    }
+    body {
+      background-image: url("../img/mobilebg.jpg");
+      background-position: ; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+      background-size: ; /* Resize the background image to cover the entire container */
+    }
+    #mainNav {
+      background-color: rgba(0,0,0,0);
+      position: static;;
+    }
+    section.cases{
+      width: 100%;
+      padding-top: 0px;
+    }
+    .clients-list {
+      display: block;
+    }
+    .clients-list img{
+      padding: 10px 0px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      height: 100px;
+    }
+    .clients-list-b {
+      display: block;
+    }
+    .clients-list-b img{
+      padding: 10px 0px;
+      margin-right: auto;
+      margin-left: auto;
+      display: block;
+      width: 70%;
+    }
+section.cases #listedcase {
+  background-image: url("../img/listedcasehover.jpg"); 
+  min-height: 400px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+section.cases #rpcase {
+  background-image: url("../img/rpcasehover.jpg");
+  min-height: 400px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+section.cases #bchcase {
+  background-image: url("../img/bchcasehover.jpg"); 
+  min-height: 400px;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+
 }
